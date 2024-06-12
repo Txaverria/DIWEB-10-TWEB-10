@@ -1,0 +1,23 @@
+:root {
+    --accent: #0084ff !important;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.border-accent {
+    border-color: var(--accent) !important;
+}
+
+.red-line {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    height: 1.5px; /* Height of the red line */
+    background-color: rgb(224, 0, 0); /* Color of the red line */
+    margin: 0px 15px; /* Adjust spacing as needed */
+}
