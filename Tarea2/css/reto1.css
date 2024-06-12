@@ -1,0 +1,25 @@
+:root {
+    --accent: rgb(255, 164, 179) !important;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.border-accent {
+    border-color: var(--accent) !important;
+}
+
+.background {
+    transform: scaleX(-1);
+}
+
+@media (max-width: 576px) {
+    .mt-xs-4 {
+        margin-top: 1.5rem !important;
+    }
+}
