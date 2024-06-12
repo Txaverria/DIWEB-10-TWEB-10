@@ -7,6 +7,19 @@ body {
     font-style: normal;
 }
 
+body::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #999;
+}
+
+body::-webkit-scrollbar-track {
+    background: #333;
+}
+
 .navbar-anchor {
     color: white !important;
     transition: all 0.3s ease;

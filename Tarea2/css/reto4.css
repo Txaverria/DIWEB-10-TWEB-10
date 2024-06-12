@@ -1,0 +1,23 @@
+:root {
+    --accent: #ff8800 !important;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.border-accent {
+    border-color: var(--accent) !important;
+}
+
+.icon {
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    font-size: 30px;
+    color: rgb(101, 194, 191);
+}
