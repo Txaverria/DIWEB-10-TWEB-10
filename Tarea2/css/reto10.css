@@ -1,0 +1,9 @@
+.img-container {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.img-container img {
+    object-fit: cover;
+    object-position: center;
+}
