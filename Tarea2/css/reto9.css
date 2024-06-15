@@ -1,0 +1,18 @@
+.logo-afiliado {
+    max-height: 75px;
+}
+
+.slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide a {
+    display: inline-block;
+    align-items: center;
+}
+
+.slide a img {
+    display: block;
+}
