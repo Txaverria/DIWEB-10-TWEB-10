@@ -1,0 +1,142 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p,
+span,
+button,
+label,
+input,
+small {
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: "Habibi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.75);
+    height: 600px;
+}
+
+.arrow-link {
+    border-radius: 50% !important;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    text-decoration: none !important;
+    font-size: calc(1.5rem) !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-width: 2px !important;
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s ease;
+}
+
+.arrow-link:hover {
+    background-color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    border-color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+}
+
+.btn-cds {
+    background-color: #c8a557;
+    border-color: #c8a557;
+    border-width: 2px;
+    color: #1b1b1b;
+    align-items: center;
+    appearance: none;
+    border-radius: 30px;
+    border-style: solid;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: space-around;
+    letter-spacing: 0.02em;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-cds:hover {
+    background-color: #1b1b1b;
+    color: white;
+    border-color: white;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.75);
+    padding: 72px 0px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 35%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 500px;
+    }
+
+    .map-container {
+        padding-bottom: 250px; /* 16:9 aspect ratio */
+    }
+}
