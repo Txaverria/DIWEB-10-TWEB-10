@@ -17,35 +17,69 @@
 
         <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"
+            integrity="sha512-SYBBAnJsPEzSQ/kBqkR/9krJ+EUgF624c8uaMBww1Q26pnCw5k7zVmtc48BfXjZ9MRNNBveIdhx/na1xRLWgjw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
         <link rel="shortcut icon" href="img/cdslogo.svg" type="image/x-icon" />
     </head>
     <body>
-        <button id="scrollTopBtn" class="btn btn-warning border border-2 border-black">
-            <i class="bi bi-arrow-up"></i>
+        <button id="scrollTopBtn" class="btn btn-warning border border-2 border-black fs-5">
+            <i class="uil uil-arrow-up"></i>
         </button>
 
-        <!-- Piezas hechas -->
-        <a href="otros/cirque.pdf" class="btn-cds" style="font-family: 'Habibi', serif;">Ver historia del Cirque du Soleil (PDF)</a>
-
-        <nav class="navbar bg-body-tertiary" >
-            <div class="container-fluid">
-              <a class="navbar-brand">Navbar</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-
-        <!-- Fin de las piezas -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-black custom-font" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/cdslogo.svg" alt="Bootstrap" width="50" height="50" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#shows">Shows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#razones">Razones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Contacto </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#presencial">Presencial</a></li>
+                                    <li><a class="dropdown-item" href="#contacto">En línea</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#galeria">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
         <header class="container-fluid header text-white">
             <div class="container d-flex flex-column justify-content-center align-items-center h-100">
                 <h1 class="display-1">Cirque du Soleil en Las Vegas</h1>
                 <p class="fs-3 mb-4">Los mejores artistas de Las Vegas protagonizan 6 espectáculos únicos e increíbles.</p>
-                <a href="#shows" class="arrow-link"><i class="bi bi-arrow-down d-flex align-items-center justify-content-center"></i></a>
+                <a href="#shows" class="arrow-link"><i class="uil uil-arrow-down fs-3"></i></a>
             </div>
         </header>
 
@@ -56,7 +90,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">The Beatles LOVE</h3>
                     <small class="mb-3 d-block">The Mirage Hotel and Casino</small>
-                    <img src="img/cds1.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds1.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -65,7 +99,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">KÀ</h3>
                     <small class="mb-3 d-block">MGM Grand</small>
-                    <img src="img/cds2.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds2.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -74,7 +108,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">"O"</h3>
                     <small class="mb-3 d-block">Bellagio Hotel and Casino</small>
-                    <img src="img/cds3.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds3.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -83,7 +117,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">Mad Apple</h3>
                     <small class="mb-3 d-block">New York-New York Hotel and Casino</small>
-                    <img src="img/cds5.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds5.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -92,7 +126,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">Michael Jackson ONE</h3>
                     <small class="mb-3 d-block">Mandalay Bay Resort & Casino</small>
-                    <img src="img/cds4.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds4.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -101,7 +135,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">Mystère</h3>
                     <small class="mb-3 d-block">Treasure Island</small>
-                    <img src="img/cds6.jpg" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
+                    <img src="img/cds6.webp" alt="" class="img-fluid rounded rounded-4 mb-4 w-100" />
                     <div class="d-flex align-items-center">
                         <p class="m-0 me-auto">3 de Julio</p>
                         <button type="button" class="btn-cds">Comprar entradas</button>
@@ -112,7 +146,46 @@
 
         <div class="py-4 py-md-5"></div>
 
-        <section class="banner">
+        <section class="py-5 bg-cds" id="razones">
+            <div class="container text-center text-black">
+                <div class="mb-5">
+                    <h1>¿Por qué Cirque du Soleil?</h1>
+                    <p>Estas son las razones por las que Cirque du Soleil es incomparable:</p>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="uil uil-palette icon-image"></i>
+                            </div>
+                        </div>
+                        <h3>Innovación Artística</h3>
+                        <p>Cirque du Soleil redefine constantemente el concepto de espectáculo, fusionando teatro, danza y circo en una experiencia visual única.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="uil uil-lightbulb-alt icon-image"></i>
+                            </div>
+                        </div>
+                        <h3>Excelencia Técnica</h3>
+                        <p>Con una combinación de acrobacias impresionantes y tecnología de punta, cada espectáculo supera los límites de lo posible y asombra al público.</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="uil uil-smile icon-image"></i>
+                            </div>
+                        </div>
+                        <h3>Emoción y Magia</h3>
+                        <p>Las historias contadas a través de sus espectáculos crean una conexión emocional profunda, transportando al espectador a mundos mágicos y sorprendentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner py-2 py-md-5" id="nosotros">
             <div class="container">
                 <div class="row justify-content-between align-items-center gap-5">
                     <div class="col-12 col-lg-5">
@@ -145,13 +218,20 @@
                                 <button type="" class="btn-cds fs-6">Suscribirse</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-5">
                         <div class="card bg-transparent text-white text-center">
-                            <div class="card-body">
+                            <div class="card-body py-4">
                                 <h5 class="card-title">Un mensaje de Stéphane Lefebvre</h5>
-                                <audio controls class="w-100">
+                                <audio controls class="w-100 mb-4">
                                     <source src="otros/audio.mp3" type="audio/mpeg" />
                                     Tu buscador no soporta elementos de audio.
                                 </audio>
+                                <div class="text-center">
+                                    <a href="otros/cirque.pdf" class="btn-cds" style="font-family: 'Habibi', serif">Ver historia del Cirque du Soleil (PDF)</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,11 +239,78 @@
             </div>
         </section>
 
-        <section class="bg-white py-5 m-0">
+        <section class="py-5" id="galeria">
+            <div class="container px-0">
+                <h1>Galería</h1>
+                <p>Una pincelada de lo que significa el Cirque du Soleil</p>
+
+                <div class="d-flex w-100 mb-3">
+                    <small class="ms-auto text-white-50">Pon el mouse encima de las imágenes para ver más información</small>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img1.webp" class="img-fluid" alt="Image 1" />
+                            <figcaption>
+                                <h1 class="fw-bold">Magia y Maravilla</h1>
+                                <p class="fw-light">Un espectáculo asombroso lleno de magia y talento.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img2.webp" class="img-fluid" alt="Image 2" />
+                            <figcaption>
+                                <h1 class="fw-bold">Colores Vibrantes</h1>
+                                <p class="fw-light">Un espectáculo vibrante lleno de color y creatividad.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img3.webp" class="img-fluid" alt="Image 3" />
+                            <figcaption>
+                                <h1 class="fw-bold">Actuaciones Únicas</h1>
+                                <p class="fw-light">Actuaciones espectaculares en un ambiente único.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img4.webp" class="img-fluid" alt="Image 4" />
+                            <figcaption>
+                                <h1 class="fw-bold">Diversión y Emoción</h1>
+                                <p class="fw-light">Diversión y emoción en cada presentación.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img5.webp" class="img-fluid" alt="Image 5" />
+                            <figcaption>
+                                <h1 class="fw-bold">Viaje Visual</h1>
+                                <p class="fw-light">Un viaje visual y emocional impresionante.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 p-0">
+                        <figure class="image-container mb-2 imghvr-fade">
+                            <img src="img/gallery/img6.webp" class="img-fluid" alt="Image 6" />
+                            <figcaption>
+                                <h1 class="fw-bold">Magia Escénica</h1>
+                                <p class="fw-light">Un escenario lleno de magia y creatividad.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-5 m-0" id="presencial">
             <div class="container">
                 <div class="text-black mb-3">
                     <h1>Ubicación de nuestras instalaciones</h1>
-                    <p>Para futuros eventos u otro tipo de consultas.</p>
+                    <p>Para futuros eventos o consultas formales.</p>
                 </div>
                 <div class="map-container mb-3">
                     <iframe
@@ -172,9 +319,22 @@
                         referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
+            </div>
+        </section>
 
-                <p class="text-black mb-2">¿Necesitas ayuda? ¡Contáctanos ahora en WhatsApp!</p>
-                <button type="button" class="btn btn-success custom-font" onclick="window.open('https://wa.me/1234567890', '_blank')">Hablar en WhatsApp <i class="bi bi-whatsapp ms-1"></i></button>
+        <section class="py-5" id="contacto">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Si necesitas contactarnos para cualquier tipo de consulta, puedes hacerlo a través de nuestras redes sociales:</p>
+
+                <a class="d-flex fs-4 custom-font social-media" href="https://www.facebook.com/CirqueduSoleil/" target="_blank">
+                    <i class="uil uil-facebook me-2"></i>
+                    Facebook
+                </a>
+                <a class="d-flex fs-4 custom-font social-media" href="https://www.instagram.com/cirquedusoleil/ " target="_blank">
+                    <i class="uil uil-instagram me-2"></i>
+                    Instagram
+                </a>
             </div>
         </section>
 
@@ -184,7 +344,6 @@
                     <a href="https://www.cirquedusoleil.com/es/" target="_blank">
                         <img src="img/cdslogo.svg" alt="" style="object-fit: cover; height: 71px; width: auto" />
                     </a>
-
                     <small class="p-0 m-0">© Cirque du Soleil 2024</small>
                 </div>
             </div>
