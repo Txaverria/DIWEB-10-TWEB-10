@@ -1,0 +1,254 @@
+// Isaac Ch. 2024.
+
+// Variables usadas
+$font-primary: "PT Serif", serif;
+$font-secondary: "Habibi", serif;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$bg-color: black;
+$text-color: white;
+$accent-color: #c8a557;
+$hover-color: #ffcd61;
+$border-width: 2px;
+$box-shadow-inset: inset 1000px 1000px rgba(0, 0, 0, 0.75);
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition-all($time: 0.2s, $ease: ease) {
+    transition: all $time $ease;
+}
+
+// Estilos globales de la página
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+    font-style: normal;
+}
+
+p,
+span,
+button,
+label,
+input,
+small,
+.custom-font {
+    font-family: $font-secondary;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+}
+
+// Header
+.header,
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: $box-shadow-inset;
+
+    &.header {
+        background-image: url(../img/header.webp);
+        height: 600px;
+    }
+
+    &.banner {
+        background-image: url(../img/banner.webp);
+    }
+}
+
+// Arrow Link
+.arrow-link {
+    border-radius: 50% !important;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    text-decoration: none !important;
+    font-size: calc(1.5rem) !important;
+    @include flex-center;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-width: $border-width !important;
+    width: 50px;
+    height: 50px;
+    @include transition-all;
+
+    &:hover {
+        background-color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+        border-color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+        color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+    }
+}
+
+// Botón Cirque Du Soleil
+.btn-cds {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border-width: $border-width;
+    color: $bg-color;
+    border-style: solid;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: $font-weight-bold;
+    justify-content: space-around;
+    letter-spacing: 0.02em;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    @include transition-all;
+
+    &:hover {
+        background-color: $bg-color;
+        color: $text-color;
+        border-color: $text-color;
+    }
+}
+
+// Contenedor del mapa de Google
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 35%; /* Para el 16:9 */
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+// Botón para el Scroll Top
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    @include transition-all(0.4s);
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+    .header {
+        height: 500px;
+    }
+
+    .map-container {
+        padding-bottom: 250px; /* 16:9 aspect ratio */
+    }
+}
+
+// Navbar
+.nav-link:hover {
+    color: $accent-color;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: $hover-color;
+}
+
+.dropdown-item:active {
+    background-color: $accent-color;
+    color: $bg-color;
+}
+
+.social-media {
+    color: $text-color;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+// Navbar Toggler (Custom para que tenga colores de la página [el dorado])
+.navbar-toggler {
+    color: $hover-color !important;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/navbar-toggler-custom.svg);
+}
+
+// Contenedor del botón centrado
+.icon-container {
+    @include flex-center;
+    margin-bottom: 1.5rem;
+}
+
+// Contenedor del ícono
+.icon {
+    @include flex-center;
+    background-color: $bg-color;
+    color: $bg-color;
+    padding: 0px 13px;
+    border-radius: 50%;
+}
+
+// El ícono en sí
+.icon-image {
+    font-size: 50px;
+    color: $text-color;
+}
+
+// Bg Cirque Du Soleil
+.bg-cds {
+    background-color: $accent-color;
+}
+
+// Contenedor para las imágenes de la galería de fotos
+.image-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 66.69%;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Hover editado para la librería de Image Hover
+[class^="imghvr-"],
+[class*=" imghvr-"] {
+    background-color: #b69652 !important;
+
+    figcaption {
+        background-color: #b69652 !important;
+        cursor: default;
+    }
+}
