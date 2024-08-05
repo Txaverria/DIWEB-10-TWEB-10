@@ -27,6 +27,8 @@
             referrerpolicy="no-referrer"
         />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <link rel="shortcut icon" href="img/cdslogo.svg" type="image/x-icon" />
     </head>
     <body>
@@ -76,19 +78,19 @@
 
             <div class="container-fluid header text-white">
                 <div class="container d-flex flex-column justify-content-center align-items-center h-100">
-                    <h1 class="display-1">Cirque du Soleil en Las Vegas</h1>
-                    <p class="fs-3 mb-4">Los mejores artistas de Las Vegas protagonizan 6 espectáculos únicos e increíbles.</p>
+                    <div class="wow animate__animated animate__fadeInDown">
+                        <h1 class="display-1">Cirque du Soleil en Las Vegas</h1>
+                        <p class="fs-3 mb-4">Los mejores artistas de Las Vegas protagonizan 6 espectáculos únicos e increíbles.</p>
+                    </div>
                     <a href="#shows" class="arrow-link"><i class="uil uil-arrow-down fs-3"></i></a>
                 </div>
             </div>
         </header>
 
-        <header class="container-fluid text-white"></header>
-
         <div class="py-4 py-md-5"></div>
 
         <section class="container" id="shows">
-            <div class="row g-5">
+            <div class="row g-5 wow animate__animated animate__fadeIn">
                 <div class="col-12 col-md-6 col-lg-4">
                     <h3 class="m-0">The Beatles LOVE</h3>
                     <small class="mb-3 d-block">The Mirage Hotel and Casino</small>
@@ -148,7 +150,7 @@
 
         <div class="py-4 py-md-5"></div>
 
-        <section class="py-5 bg-cds" id="razones">
+        <section class="py-5 bg-cds wow animate__animated animate__fadeInDown" id="razones">
             <div class="container text-center text-black">
                 <div class="mb-5">
                     <h1>¿Por qué Cirque du Soleil?</h1>
@@ -204,7 +206,7 @@
                             allowfullscreen
                         ></iframe>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 wow animate__animated animate__zoomIn">
                         <div class="text-center">
                             <h2>¿No puedes asistir?</h2>
                             <p class="m-0">Te avisamos cuándo será nuestro próximo espectáculo.</p>
@@ -243,8 +245,10 @@
 
         <section class="py-5" id="galeria">
             <div class="container px-0">
-                <h1>Galería</h1>
-                <p>Una pincelada de lo que significa el Cirque du Soleil</p>
+                <div class="wow animate__animated animate__zoomIn">
+                    <h1>Galería</h1>
+                    <p>Una pincelada de lo que significa el Cirque du Soleil</p>
+                </div>
 
                 <div class="d-flex w-100 mb-3">
                     <small class="ms-auto text-white-50">Pon el mouse encima de las imágenes para ver más información</small>
@@ -358,5 +362,16 @@
         ></script>
 
         <script src="js/script.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
