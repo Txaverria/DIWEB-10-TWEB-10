@@ -31,6 +31,11 @@
 body {
     /* font-family: var(--main-font-family); */
     font-family: var(--secondary-font-family);
+    font-display: swap;
+}
+
+.tooltip-inner {
+    font-family: var(--secondary-font-family);
 }
 
 /* Font Weights */
@@ -87,6 +92,10 @@ body {
 
 .navbar-toggler-icon {
     background-image: url(../img/navbar-toggler-custom.svg);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgb(194, 0, 0, 0.25)
 }
 
 /* BTN */
@@ -300,9 +309,24 @@ body {
 /* Accordion Colors */
 
 .accordion-button:not(.collapsed) {
-    color: var(--bs-accordion-active-color);
-    background-color: var(--bs-accordion-active-bg);
-    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    color: white;
+    background-color: var(--primary-color);
+    box-shadow: inset 0 calc(-1 * var(--primary-color)) 0 var(--primary-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/svg-arrow-custom.svg);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(163, 0, 0, 0.25);
+}
+
+/* Custom color input */
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(163, 0, 0, 0.25);
+    border: 1px var(--primary-color) solid;
 }
 
 /* YT */
