@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>VALENS Gym</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/reglas.css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <link rel="shortcut icon" href="img/icon-white.svg" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/icon-red.svg" alt="Logo" height="24" class="d-inline-block align-text-top" />
+                        <span class="fw-500">VALENS</span>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Clases </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                                    <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="crossfit.html">Crossfit</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="membresia.html">Membresía</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="entrenadores.html">Entrenadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel/1.webp" class="d-block w-100" alt="Entrenadores de fuerza" />
+                        <div class="carousel-caption">
+                            <h5>Entrenadores con Amplia Experiencia</h5>
+                            <p>Nuestro equipo está formado por profesionales con años de experiencia en diversas disciplinas, asegurando una guía experta para cada entrenamiento.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/2.webp" class="d-block w-100" alt="Entrenadores flexibles" />
+                        <div class="carousel-caption">
+                            <h5>Flexibilidad y Adaptabilidad</h5>
+                            <p>Ofrecemos entrenadores que se adaptan a tus horarios y necesidades, brindando sesiones personalizadas para maximizar tu progreso.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/3.webp" class="d-block w-100" alt="Entrenadores profesionales" />
+                        <div class="carousel-caption">
+                            <h5>Profesionalismo y Dedicación</h5>
+                            <p>Nuestros entrenadores se comprometen a proporcionarte un ambiente seguro y motivador, centrado en tus metas y bienestar físico.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <main class="py-5 container">
+            <h2>Nuestros entrenadores</h2>
+            <p>
+                En nuestro gimnasio, ofrecemos una amplia gama de servicios para ayudarte a alcanzar tus objetivos de fitness. Desde el equipamiento más avanzado hasta la orientación personalizada de
+                nuestros entrenadores, tenemos todo lo que necesitas para un entrenamiento efectivo.
+            </p>
+
+            <div class="row wow animate__animated animate__fadeInRight">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card" id="entrenador1">
+                        <div class="top-card-img-container">
+                            <img src="img/trainers/1.webp" class="card-img-top" alt="Entrenador 1" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-1">
+                                <a href="#entrenador1" data-bs-toggle="tooltip" data-bs-title="Licenciatura en Ciencias del Deporte y la Actividad Física">Alejandro Martínez</a>
+                            </h5>
+                            <p class="card-text">
+                                Experto en entrenamiento funcional y nutrición deportiva. Alejandro se enfoca en personalizar planes de entrenamiento para lograr objetivos específicos.
+                            </p>
+                            <h5 class="card-title border-bottom pb-1">Habilidades</h5>
+                            <div class="progress-bars">
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento de Nutrición</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento de Nutrición" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Entrenamiento Personalizado</span>
+                                    <div class="progress" role="progressbar" aria-label="Entrenamiento Personalizado" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Motivación y Liderazgo</span>
+                                    <div class="progress" role="progressbar" aria-label="Motivación y Liderazgo" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento en Anatomía</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento en Anatomía" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Planificación de Rutinas</span>
+                                    <div class="progress" role="progressbar" aria-label="Planificación de Rutinas" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card" id="entrenador2">
+                        <div class="top-card-img-container">
+                            <img src="img/trainers/2.webp" class="card-img-top" alt="Entrenador 2" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-1"><a href="#entrenador2" data-bs-toggle="tooltip" data-bs-title="Licenciatura en Nutrición y Dietética">Laura Gómez</a></h5>
+                            <p class="card-text">Especialista en entrenamiento de fuerza y recuperación. Laura ofrece asesoría completa para alcanzar el máximo potencial físico de sus clientes.</p>
+                            <h5 class="card-title border-bottom pb-1">Habilidades</h5>
+                            <div class="progress-bars">
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento de Nutrición</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento de Nutrición" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Entrenamiento Personalizado</span>
+                                    <div class="progress" role="progressbar" aria-label="Entrenamiento Personalizado" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Motivación y Liderazgo</span>
+                                    <div class="progress" role="progressbar" aria-label="Motivación y Liderazgo" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento en Anatomía</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento en Anatomía" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Planificación de Rutinas</span>
+                                    <div class="progress" role="progressbar" aria-label="Planificación de Rutinas" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card" id="entrenador3">
+                        <div class="top-card-img-container">
+                            <img src="img/trainers/3.webp" class="card-img-top" alt="Entrenador 3" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom pb-1"><a href="#entrenador3" data-bs-toggle="tooltip" data-bs-title="Certificación en Entrenamiento Personal">Carlos López</a></h5>
+                            <p class="card-text">
+                                Con una pasión por el entrenamiento de alta intensidad y la salud general, Carlos ayuda a sus clientes a alcanzar sus metas con técnicas innovadoras y motivación
+                                constante.
+                            </p>
+                            <h5 class="card-title border-bottom pb-1">Habilidades</h5>
+                            <div class="progress-bars">
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento de Nutrición</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento de Nutrición" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Entrenamiento Personalizado</span>
+                                    <div class="progress" role="progressbar" aria-label="Entrenamiento Personalizado" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Motivación y Liderazgo</span>
+                                    <div class="progress" role="progressbar" aria-label="Motivación y Liderazgo" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Conocimiento en Anatomía</span>
+                                    <div class="progress" role="progressbar" aria-label="Conocimiento en Anatomía" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 55%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <span class="progress-label">Planificación de Rutinas</span>
+                                    <div class="progress" role="progressbar" aria-label="Planificación de Rutinas" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer bg-dark">
+            <div class="footer-top"></div>
+            <div class="footer-padding py-5 d-flex justify-content-between align-items-center">
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white mx-2 text-decoration-none fs-5">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white mx-2 text-decoration-none fs-5">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="index.html"> <img src="img/icon-white.svg" alt="Logo" width="32" class="me-1" /><span class="fw-500">VALENS</span> </a>
+                </div>
+            </div>
+            <div class="copyright text-white text-center px-3 pb-5 fs-6 fs-md-5 fs-lg-4">&copy; 2024 VALENS</div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="js/tooltip.js"></script>
+
+        <script src="script.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
