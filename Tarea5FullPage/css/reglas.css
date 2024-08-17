@@ -1,0 +1,62 @@
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        height: calc(100dvh - 100px);
+    }
+
+    .hero-video {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    }
+
+    .overlay {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    }
+
+    .footer-top {
+        clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+    }
+
+    .footer-padding {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.75em;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .banner-training h1 {
+        font-size: 2.5rem;
+    }
+    .banner-training p {
+        font-size: 1rem;
+    }
+
+    .yt-video {
+        height: 350px;
+    }
+
+    .card-membership {
+        height: auto;
+    }
+}
