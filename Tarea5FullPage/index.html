@@ -1,259 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>VALENS</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VALENS</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="preload" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="preload"
+    />
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
-        />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/reglas.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/reglas.css" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-        <link rel="shortcut icon" href="img/icon-white.svg" type="image/x-icon" />
-    </head>
-    <body>
-        <div class="hero-section d-flex">
-            <video id="heroVideo" class="hero-video" autoplay muted loop>
-                <source src="video/VideoBanner2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div class="overlay"></div>
-            <div class="hero-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
-                <div class="w-100 position-absolute top-0">
-                    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="img/icon-red.svg" alt="Logo" height="24" class="d-inline-block align-text-top" />
-                                <span class="fw-500">VALENS</span>
-                            </a>
-                            <button
-                                class="navbar-toggler"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation"
-                            >
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Clases </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
-                                            <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
-                                            <li><hr class="dropdown-divider" /></li>
-                                            <li><a class="dropdown-item" href="crossfit.html">Crossfit</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="membresia.html">Membresía</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="entrenadores.html">Entrenadores</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="container pt-5">
-                    <h1 class="display-1 fw-500 wow animate__animated animate__fadeIn" style="letter-spacing: 20px; animation-duration: 3s !important">VALENS</h1>
-                    <p>Fitness en su máxima expresión</p>
-                    <a href="contacto.html" class="btn btn-valens">Únete a la élite de VALENS</a>
-                </div>
+    <link rel="shortcut icon" href="img/icon-white.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="hero-section d-flex">
+      <video id="heroVideo" class="hero-video" autoplay muted loop>
+        <source src="video/VideoBanner2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay"></div>
+      <div
+        class="hero-content d-flex flex-column justify-content-center align-items-center h-100 w-100"
+      >
+        <div class="w-100 position-absolute top-0">
+          <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="img/icon-red.svg"
+                  alt="Logo"
+                  height="24"
+                  class="d-inline-block align-text-top"
+                />
+                <span class="fw-500">VALENS</span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Clases
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="yoga.html">Yoga</a></li>
+                      <li><a class="dropdown-item" href="zumba.html">Zumba</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="crossfit.html">Crossfit</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="membresia.html">Membresía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="entrenadores.html"
+                      >Entrenadores</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+        </div>
+        <div class="container pt-5">
+          <h1
+            class="display-1 fw-500 wow animate__animated animate__fadeIn"
+            style="letter-spacing: 20px; animation-duration: 3s !important"
+          >
+            VALENS
+          </h1>
+          <p>Fitness en su máxima expresión</p>
+          <a href="contacto.html" class="btn btn-valens">Únete a la élite de VALENS</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4"></div>
+
+    <section class="container py-5">
+      <div class="text-center">
+        <h2 class="fw-700 display-5">Nuestros servicios</h2>
+        <p>
+          En nuestro gimnasio, ofrecemos una amplia gama de servicios para ayudarte a alcanzar tus
+          objetivos de fitness
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-3 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="top-card-img-container">
+              <img src="img/cards/1.webp" class="card-img-top" alt="Equipo de ejercicio avanzado" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Equipamiento de Última Generación</h5>
+              <p class="card-text">
+                Nuestro gimnasio está equipado con las máquinas y herramientas más modernas para
+                garantizar un entrenamiento completo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="top-card-img-container">
+              <img
+                src="img/cards/2.webp"
+                class="card-img-top"
+                alt="Planes de dieta personalizados"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Planes de Dieta Personalizados</h5>
+              <p class="card-text">
+                Nuestros nutricionistas te ayudarán a crear un plan de dieta adaptado a tus
+                necesidades y a tus objetivos específicos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="top-card-img-container">
+              <img src="img/cards/3.webp" class="card-img-top" alt="Entrenamiento personal" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Entrenamiento Personalizado</h5>
+              <p class="card-text">
+                Nuestros entrenadores personales están disponibles para guiarte en tu camino hacia
+                el mejor posible estado físico que imaginaste que podías conseguir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container wow animate__animated animate__slideInUp" data-wow-offset="200">
+      <div class="py-5">
+        <h2 class="fw-700 display-5">Beneficios del ejercicio</h2>
+        <p>
+          El ejercicio regular ofrece numerosos beneficios para la salud física y mental. A
+          continuación, se presentan algunos de los principales beneficios.
+        </p>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Mejora de la salud cardiovascular
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                El ejercicio regular ayuda a fortalecer el corazón, mejorar la circulación sanguínea
+                y reducir el riesgo de enfermedades cardiovasculares. Esto incluye la disminución de
+                la presión arterial, el control del colesterol y la prevención de infartos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Control del peso
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                La actividad física aumenta el metabolismo y ayuda a quemar calorías, lo que es
+                crucial para el control del peso. Además, el ejercicio regular promueve el
+                desarrollo de músculo magro, que a su vez mejora el metabolismo basal.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Bienestar mental
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                El ejercicio libera endorfinas, que son químicos del cerebro que actúan como
+                analgésicos naturales y elevadores del estado de ánimo. Además, puede ayudar a
+                reducir el estrés, combatir la depresión y mejorar la calidad del sueño.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Aumento de la fuerza y flexibilidad
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                El ejercicio no solo ayuda a construir músculos más fuertes, sino que también mejora
+                la flexibilidad y la resistencia. Esto puede facilitar las tareas diarias y reducir
+                el riesgo de lesiones.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Prevención de enfermedades crónicas
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                La práctica regular de ejercicio físico está vinculada a la prevención de diversas
+                enfermedades crónicas, incluyendo diabetes tipo 2, osteoporosis y algunos tipos de
+                cáncer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-dark">
+      <div class="footer-top"></div>
+      <div class="footer-padding py-5 d-flex justify-content-between align-items-center">
+        <div class="social-links">
+          <!-- Bootstrap icons for Facebook and Instagram -->
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="text-white mx-2 text-decoration-none fs-5"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="text-white mx-2 text-decoration-none fs-5"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
 
-        <div class="py-4"></div>
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="img/icon-white.svg" alt="Logo" width="32" class="me-1" /><span class="fw-500"
+              >VALENS</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="copyright text-white text-center px-3 pb-5 fs-6 fs-md-5 fs-lg-4">
+        &copy; 2024 VALENS
+      </div>
+    </footer>
 
-        <section class="container wow animate__animated animate__slideInUp" data-wow-offset="200">
-            <div class="py-5">
-                <h2 class="fw-700 display-5">Beneficios del ejercicio</h2>
-                <p>El ejercicio regular ofrece numerosos beneficios para la salud física y mental. A continuación, se presentan algunos de los principales beneficios.</p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Mejora de la salud cardiovascular
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                El ejercicio regular ayuda a fortalecer el corazón, mejorar la circulación sanguínea y reducir el riesgo de enfermedades cardiovasculares. Esto incluye la disminución
-                                de la presión arterial, el control del colesterol y la prevención de infartos.
-                            </div>
-                        </div>
-                    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Control del peso
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                La actividad física aumenta el metabolismo y ayuda a quemar calorías, lo que es crucial para el control del peso. Además, el ejercicio regular promueve el desarrollo de
-                                músculo magro, que a su vez mejora el metabolismo basal.
-                            </div>
-                        </div>
-                    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Bienestar mental
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                El ejercicio libera endorfinas, que son químicos del cerebro que actúan como analgésicos naturales y elevadores del estado de ánimo. Además, puede ayudar a reducir el
-                                estrés, combatir la depresión y mejorar la calidad del sueño.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Aumento de la fuerza y flexibilidad
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                El ejercicio no solo ayuda a construir músculos más fuertes, sino que también mejora la flexibilidad y la resistencia. Esto puede facilitar las tareas diarias y reducir
-                                el riesgo de lesiones.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Prevención de enfermedades crónicas
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                La práctica regular de ejercicio físico está vinculada a la prevención de diversas enfermedades crónicas, incluyendo diabetes tipo 2, osteoporosis y algunos tipos de
-                                cáncer.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container py-5">
-            <div class="text-center">
-                <h2 class="fw-700 display-5">Nuestros servicios</h2>
-                <p>En nuestro gimnasio, ofrecemos una amplia gama de servicios para ayudarte a alcanzar tus objetivos de fitness</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="top-card-img-container">
-                            <img src="img/cards/1.webp" class="card-img-top" alt="Equipo de ejercicio avanzado" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Equipamiento de Última Generación</h5>
-                            <p class="card-text">Nuestro gimnasio está equipado con las máquinas y herramientas más modernas para garantizar un entrenamiento completo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="top-card-img-container">
-                            <img src="img/cards/2.webp" class="card-img-top" alt="Planes de dieta personalizados" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Planes de Dieta Personalizados</h5>
-                            <p class="card-text">Nuestros nutricionistas te ayudarán a crear un plan de dieta adaptado a tus necesidades y a tus objetivos específicos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 mb-3 mb-sm-0">
-                    <div class="card">
-                        <div class="top-card-img-container">
-                            <img src="img/cards/3.webp" class="card-img-top" alt="Entrenamiento personal" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Entrenamiento Personalizado</h5>
-                            <p class="card-text">
-                                Nuestros entrenadores personales están disponibles para guiarte en tu camino hacia el mejor posible estado físico que imaginaste que podías conseguir.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer bg-dark">
-            <div class="footer-top"></div>
-            <div class="footer-padding py-5 d-flex justify-content-between align-items-center">
-                <div class="social-links">
-                    <!-- Bootstrap icons for Facebook and Instagram -->
-                    <a href="https://www.facebook.com" target="_blank" class="text-white mx-2 text-decoration-none fs-5">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="text-white mx-2 text-decoration-none fs-5">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </div>
-
-                <div class="footer-logo">
-                    <a href="index.html"> <img src="img/icon-white.svg" alt="Logo" width="32" class="me-1" /><span class="fw-500">VALENS</span> </a>
-                </div>
-            </div>
-            <div class="copyright text-white text-center px-3 pb-5 fs-6 fs-md-5 fs-lg-4">&copy; 2024 VALENS</div>
-        </footer>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-            integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-
-        <script>
-            new WOW().init();
-        </script>
-    </body>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
